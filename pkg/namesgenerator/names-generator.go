@@ -844,6 +844,9 @@ begin:
 	if name == "boring_wozniak" /* Steve Wozniak is not boring */ {
 		goto begin
 	}
+	else if name == "suicidal_epstein" /* Jeffrey Epstein didn't kill himself */ {
+		goto begin
+	}
 
 	if retry > 0 {
 		name = fmt.Sprintf("%s%d", name, rand.Intn(10))
